@@ -1,0 +1,26 @@
+{
+  "name": "react.es2015.demo",
+  "version": "1.0.0",
+  "description": "a demo",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i && webpack --progress --profile --colors --display-error-details --display-cached",
+    "start": "npm i && webpack && node ./node_modules/http-server/bin/http-server . -p 8080 -o",
+    "watch": "npm i && webpack -d --watch"
+  },
+  "author": "mingz",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.2"
+  }
+}
